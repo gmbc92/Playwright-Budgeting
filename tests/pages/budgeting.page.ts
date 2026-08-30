@@ -6,6 +6,7 @@ export class BudgetingPage {
     readonly startOfBudgetYearGroup: Locator;
     readonly totalBudgetInput: Locator;
     readonly allocationCategoriesText: Locator;
+    readonly successToast: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -13,6 +14,7 @@ export class BudgetingPage {
         this.startOfBudgetYearGroup = page.getByLabel("Start Of Budget Year");
         this.totalBudgetInput = page.getByLabel("Total budget year grant budget (Planned Giving)");
         this.allocationCategoriesText = page.getByText("Allocation categories", { exact: true });
+        this.successToast = page.getByText("Successfully updated");
     }
 
     async openFoundation(foundationName: string) {
@@ -30,5 +32,21 @@ export class BudgetingPage {
         await expect(this.budgetingHeading).toBeVisible();
         await expect(this.allocationCategoriesText).toBeVisible();
         await expect(this.totalBudgetInput).toBeVisible();
+    }
+
+    async fillTotalBudget(amount: string) {
+        await this.totalBudgetInput.fill(amount);
+        await this.totalBudgetInput.blur(); // precisa tirar o foco pra disparar o autosave
+    }
+
+    async typeIntoTotalBudget(text: string) {
+        // pressSequentially em vez de fill: simula teclado de verdade,
+        // testando se a máscara do campo bloqueia caracteres inválidos na hora da digitação
+        await this.totalBudgetInput.pressSequentially(text);
+        await this.totalBudgetInput.blur();
+    }
+
+    async getTotalBudgetValue() {
+        return this.totalBudgetInput.inputValue();
     }
 }
