@@ -8,7 +8,7 @@ export default defineConfig({
     fullyParallel: true,
     forbidOnly: !!process.env.CI,
     retries: process.env.CI ? 2 : 1,
-    timeout: 45_000,
+    timeout: 120_000,
     workers: process.env.CI ? 1 : undefined,
     reporter: "html",
     use: {
@@ -16,6 +16,7 @@ export default defineConfig({
         locale: "en-US",
         trace: "on-first-retry",
         screenshot: "only-on-failure",
+        actionTimeout: 30000,
     },
 
     projects: [

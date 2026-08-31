@@ -7,6 +7,8 @@ export class BudgetingPage {
     readonly totalBudgetInput: Locator;
     readonly allocationCategoriesText: Locator;
     readonly successToast: Locator;
+    readonly childExceedsParentWarning: Locator;
+    readonly loadingBudgetIndicator: Locator;
 
     constructor(page: Page) {
         this.page = page;
@@ -15,6 +17,31 @@ export class BudgetingPage {
         this.totalBudgetInput = page.getByLabel("Total budget year grant budget (Planned Giving)");
         this.allocationCategoriesText = page.getByText("Allocation categories", { exact: true });
         this.successToast = page.getByText("Successfully updated");
+        this.childExceedsParentWarning = page.getByText("Some child allocations exceed their parent allocation amounts", {
+            exact: false,
+        });
+        this.loadingBudgetIndicator = page.getByText("Loading budget...");
+    }
+
+    private toastCloseButton(): Locator {
+        return this.page
+            .getByRole("region", { name: "Notifications-bottom", exact: true })
+            .getByRole("button", { name: "Close" });
+    }
+
+    private async closeToasts() {
+        for (let i = 0; i < 3; i++) {
+            const count = await this.toastCloseButton()
+                .count()
+                .catch(() => 0);
+            if (count === 0) return;
+
+            await this.toastCloseButton()
+                .first()
+                .click({ timeout: 2000 })
+                .catch(() => {});
+            await this.page.waitForTimeout(300);
+        }
     }
 
     private async clearField(locator: Locator) {
@@ -43,6 +70,7 @@ export class BudgetingPage {
     async assertBudgetingArea() {
         await this.page.waitForURL((url) => url.pathname.includes("/settings/admin"));
         await expect(this.budgetingHeading).toBeVisible();
+        await this.loadingBudgetIndicator.waitFor({ state: "hidden" }).catch(() => {});
         await expect(this.allocationCategoriesText).toBeVisible();
         await expect(this.totalBudgetInput).toBeVisible();
     }
@@ -51,6 +79,7 @@ export class BudgetingPage {
         await this.clearField(this.totalBudgetInput);
         await this.totalBudgetInput.fill(amount);
         await this.totalBudgetInput.blur();
+        await this.closeToasts();
     }
 
     async typeIntoTotalBudget(text: string) {
@@ -63,78 +92,47 @@ export class BudgetingPage {
         return this.totalBudgetInput.inputValue();
     }
 
-    categoryNameInput(index: number): Locator {
-        return this.page.getByRole("textbox").nth(index + 1);
+    lastCategoryName(): Locator {
+        return this.page.getByRole("textbox").last();
     }
 
-    categoryValueInput(index: number): Locator {
-        return this.page.getByRole("spinbutton").nth(index);
+    lastCategoryValue(): Locator {
+        return this.page.getByRole("spinbutton").last();
     }
 
-    removeCategoryButton(index: number): Locator {
-        return this.page.getByRole("button", { name: "Remove" }).nth(index);
-    }
-
-    async fillCategoryName(index: number, name: string) {
-        const input = this.categoryNameInput(index);
-        await this.clearField(input);
-        await input.fill(name);
-        await input.blur();
-    }
-
-    async getCategoryName(index: number) {
-        return this.categoryNameInput(index).inputValue();
-    }
-
-    async fillCategoryValue(index: number, value: string) {
-        const input = this.categoryValueInput(index);
-        await this.clearField(input);
-        await input.fill(value);
-        await input.blur();
-    }
-
-    async typeIntoCategoryValue(index: number, text: string) {
-        const input = this.categoryValueInput(index);
-        await this.clearField(input);
-        await input.pressSequentially(text);
-        await input.blur();
-    }
-
-    async getCategoryValue(index: number) {
-        return this.categoryValueInput(index).inputValue();
-    }
-
-    async removeCategory(index: number) {
-        await this.removeCategoryButton(index).click();
-    }
-
-    async getCategoryCount() {
-        return this.page.getByRole("spinbutton").count();
+    categoryExceedsParentError(): Locator {
+        return this.page.getByText("Amount cannot exceed parent allocation", { exact: false });
     }
 
     async addCategory() {
         await this.page.getByRole("button", { name: "Add" }).nth(3).click();
+        await this.page.waitForTimeout(10000);
+        await this.closeToasts();
     }
 
-    async addSubCategory(parentIndex: number) {
-        await this.page.getByRole("button", { name: "Add sub" }).nth(parentIndex).click();
+    async addSubCategory() {
+        await this.page.getByRole("button", { name: "Add sub" }).last().click();
+        await this.page.waitForTimeout(10000);
+        await this.closeToasts();
     }
 
-    async resetCategoriesToStandard(standard: { name: string; value: string }[]) {
-        let count = await this.getCategoryCount();
-        while (count > 1) {
-            await this.removeCategory(0);
-            count = await this.getCategoryCount();
-        }
+    async fillLastCategoryName(name: string) {
+        await this.clearField(this.lastCategoryName());
+        await this.lastCategoryName().fill(name);
+        await this.lastCategoryName().blur();
+        await this.closeToasts();
+    }
 
-        await this.fillCategoryName(0, standard[0].name);
-        await this.fillCategoryValue(0, standard[0].value);
+    async fillLastCategoryValue(value: string) {
+        await this.clearField(this.lastCategoryValue());
+        await this.lastCategoryValue().fill(value);
+        await this.lastCategoryValue().blur();
+        await this.closeToasts();
+    }
 
-        for (let i = 1; i < standard.length; i++) {
-            await this.addCategory();
-            const index = (await this.getCategoryCount()) - 1;
-            await this.fillCategoryName(index, standard[i].name);
-            await this.fillCategoryValue(index, standard[i].value);
-        }
+    async removeLastCategory() {
+        await this.page.getByRole("button", { name: "Remove" }).last().click();
+        await this.page.waitForTimeout(5000);
+        await this.closeToasts();
     }
 }

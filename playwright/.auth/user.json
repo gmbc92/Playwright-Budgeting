@@ -1,0 +1,182 @@
+{
+  "cookies": [
+    {
+      "name": "__cf_bm",
+      "value": "y99g4teO4cGZKpJNSqR4eqg2C.OYKaDZba2to5EJYsE-1788200032-1.0.1.1-IMX2jWmpadUvXQ_eTKR2sFpL6ipYWX3NjnakGRQ7hrKuYEiXvdPhnPjZfr2GvVLg4WCpSYiJ5caZgwkd0AKlomB9hfhxWN.bXaakt7VjFwk",
+      "domain": ".liberal-swift-54.clerk.accounts.dev",
+      "path": "/",
+      "expires": 1788201834.082354,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cfuvid",
+      "value": "EJhR6QahQp09RRd1zWCfmagLFyDhOXswQgnv43Cep0s-1788200032595-0.0.1.1-604800000",
+      "domain": ".liberal-swift-54.clerk.accounts.dev",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "vercel-experiment-uuid",
+      "value": "WTjha3o2awTZOGOOGQICj",
+      "domain": "vercel.live",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://trytemelio.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "crisp-client%2Fsession%2F7b8ef069-f59e-4fdd-aadc-b0828eee4615",
+      "value": "session_fb5aa752-8445-41d3-9fe9-53c279b1c4fb",
+      "domain": ".trytemelio.com",
+      "path": "/",
+      "expires": 1803968162,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__client_uat_VCKaPsQe",
+      "value": "1788200154",
+      "domain": ".trytemelio.com",
+      "path": "/",
+      "expires": 1819736463,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "__client_uat",
+      "value": "1788200154",
+      "domain": ".trytemelio.com",
+      "path": "/",
+      "expires": 1819736463,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "clerk_active_context",
+      "value": "sess_3IgxkIaHDF6yQH6KD3ePxFWKAo9:",
+      "domain": "app-dev.trytemelio.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ph_phc_zV36C2aYFisD50tZXK14wVgdik4TVF0Zq23MtagRGkK_posthog",
+      "value": "%7B%22%24device_id%22%3A%2201a05907-243e-748d-ad34-40108a602ae0%22%2C%22distinct_id%22%3A%22gmbc92%40gmail.com%22%2C%22%24epp%22%3Atrue%2C%22%24user_state%22%3A%22identified%22%7D",
+      "domain": ".trytemelio.com",
+      "path": "/",
+      "expires": 1819736461,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__clerk_db_jwt_VCKaPsQe",
+      "value": "dvb_3IgxUzCVK6zqGR9jFDpnb4AbD2X",
+      "domain": "app-dev.trytemelio.com",
+      "path": "/",
+      "expires": 1819736456,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__clerk_db_jwt",
+      "value": "dvb_3IgxUzCVK6zqGR9jFDpnb4AbD2X",
+      "domain": "app-dev.trytemelio.com",
+      "path": "/",
+      "expires": 1819736456,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__session",
+      "value": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yYjU3WFFJU0RFTk5IRjR4UFlvWUpYOTV6MmYiLCJvaWF0IjoxNzg4MjAwNDU0LCJ0eXAiOiJKV1QifQ.eyJhdXRocHJvdmlkZXIiOiJjbGVyayIsImF6cCI6Imh0dHBzOi8vYXBwLWRldi50cnl0ZW1lbGlvLmNvbSIsImVtYWlsIjoiZ21iYzkyQGdtYWlsLmNvbSIsImV4cCI6MTc4ODIwMDUxNCwiZnVsbE5hbWUiOiJHdWlsaGVybWUgTWVuZGVzIiwiZnZhIjpbNSwtMV0sImlhdCI6MTc4ODIwMDQ1NCwiaXNzIjoiaHR0cHM6Ly9saWJlcmFsLXN3aWZ0LTU0LmNsZXJrLmFjY291bnRzLmRldiIsImp0aSI6ImJhZDI3M2ExZjk3ZmQyZjlkYTEyIiwibWZhRW5hYmxlZCI6ZmFsc2UsIm5iZiI6MTc4ODIwMDQ0NCwicHJpbWFyeUVtYWlsVmVyaWZpZWQiOnRydWUsInNpZCI6InNlc3NfM0lneGtJYUhERjZ5UUg2S0QzZVB4RldLQW85Iiwic3RzIjoiYWN0aXZlIiwic3ViIjoidXNlcl8zSWd4YzBjQldBWlZXSExMVDY2Z290eFpYZGwiLCJ2IjoyfQ.sbMefB2p7rpUBSUCaJlVvPD_XmYkwjFLimhJ7xz_ASZZg_mZnKVSV2ncB7raD7zR7CUkUSumSnYFStKPx3PPHdqPTjnrubv1748CEIwUmrQlama0Tnb4_3WqaiL9v6YnfLhlapRuLQZ6JU4UjYKnLcBgnyHqccE3G8XnSn7kw0tL-HRTmzAzpZLKsKfO2pO81qe62okQvUK3abksHIHgSV7QrZZ57M1KVYSNSu036S89UPVuEIdiinKaROA2tqlBg1HSe34tbRtjLEy0iXp2HUdHDYk0FuPfBr_RCqhp0u6N5Ea9B-VVosRhLeE5M4hdi17Mq8l79LayYYOb503I9Q",
+      "domain": "app-dev.trytemelio.com",
+      "path": "/",
+      "expires": 1819736463,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__session_VCKaPsQe",
+      "value": "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yYjU3WFFJU0RFTk5IRjR4UFlvWUpYOTV6MmYiLCJvaWF0IjoxNzg4MjAwNDU0LCJ0eXAiOiJKV1QifQ.eyJhdXRocHJvdmlkZXIiOiJjbGVyayIsImF6cCI6Imh0dHBzOi8vYXBwLWRldi50cnl0ZW1lbGlvLmNvbSIsImVtYWlsIjoiZ21iYzkyQGdtYWlsLmNvbSIsImV4cCI6MTc4ODIwMDUxNCwiZnVsbE5hbWUiOiJHdWlsaGVybWUgTWVuZGVzIiwiZnZhIjpbNSwtMV0sImlhdCI6MTc4ODIwMDQ1NCwiaXNzIjoiaHR0cHM6Ly9saWJlcmFsLXN3aWZ0LTU0LmNsZXJrLmFjY291bnRzLmRldiIsImp0aSI6ImJhZDI3M2ExZjk3ZmQyZjlkYTEyIiwibWZhRW5hYmxlZCI6ZmFsc2UsIm5iZiI6MTc4ODIwMDQ0NCwicHJpbWFyeUVtYWlsVmVyaWZpZWQiOnRydWUsInNpZCI6InNlc3NfM0lneGtJYUhERjZ5UUg2S0QzZVB4RldLQW85Iiwic3RzIjoiYWN0aXZlIiwic3ViIjoidXNlcl8zSWd4YzBjQldBWlZXSExMVDY2Z290eFpYZGwiLCJ2IjoyfQ.sbMefB2p7rpUBSUCaJlVvPD_XmYkwjFLimhJ7xz_ASZZg_mZnKVSV2ncB7raD7zR7CUkUSumSnYFStKPx3PPHdqPTjnrubv1748CEIwUmrQlama0Tnb4_3WqaiL9v6YnfLhlapRuLQZ6JU4UjYKnLcBgnyHqccE3G8XnSn7kw0tL-HRTmzAzpZLKsKfO2pO81qe62okQvUK3abksHIHgSV7QrZZ57M1KVYSNSu036S89UPVuEIdiinKaROA2tqlBg1HSe34tbRtjLEy0iXp2HUdHDYk0FuPfBr_RCqhp0u6N5Ea9B-VVosRhLeE5M4hdi17Mq8l79LayYYOb503I9Q",
+      "domain": "app-dev.trytemelio.com",
+      "path": "/",
+      "expires": 1819736463,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://app-dev.trytemelio.com",
+      "localStorage": [
+        {
+          "name": "ph_phc_zV36C2aYFisD50tZXK14wVgdik4TVF0Zq23MtagRGkK_posthog",
+          "value": "{\"$device_id\":\"01a05907-243e-748d-ad34-40108a602ae0\",\"distinct_id\":\"gmbc92@gmail.com\",\"$user_state\":\"identified\",\"$initialization_time\":\"2026-08-31T18:16:01.054Z\",\"$configured_session_timeout_ms\":1800000,\"$session_recording_remote_config\":{\"cache_timestamp\":1788200161320,\"enabled\":true,\"canvasFps\":null,\"canvasQuality\":null,\"consoleLogRecordingEnabled\":true,\"endpoint\":\"/s/\",\"eventTriggers\":[],\"linkedFlag\":null,\"masking\":null,\"minimumDurationMilliseconds\":30000,\"networkPayloadCapture\":{\"capturePerformance\":{\"network_timing\":true,\"web_vitals\":true,\"web_vitals_allowed_metrics\":null},\"recordBody\":true,\"recordHeaders\":true},\"recordCanvas\":false,\"recorderVersion\":\"v2\",\"sampleRate\":null,\"scriptConfig\":{\"script\":\"posthog-recorder\"},\"triggerMatchType\":null,\"urlBlocklist\":[{\"matching\":\"regex\",\"url\":\"^(?:https?://)?app\\\\.trytemelio\\\\.com(?:/(?!(?:nonprofit|form|eligibility|signin|signup|verify|oauth-callback)(?:/|\\\\?|#|$)).*)?/?$\"}],\"urlTriggers\":[{\"matching\":\"regex\",\"url\":\"^(?:https?://)?app\\\\.trytemelio\\\\.com(?:/(?!(?:nonprofit|form|eligibility|signin|signup|verify|oauth-callback)(?:/|\\\\?|#|$)).*)?/?$\"}],\"version\":1,\"canvasRecording\":{\"enabled\":false,\"fps\":null,\"quality\":null}},\"$autocapture_disabled_server_side\":false,\"$heatmaps_enabled_server_side\":true,\"$product_tours_enabled_server_side\":false,\"$web_vitals_enabled_server_side\":true,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":true,\"$error_tracking_suppression_rules\":[],\"$dead_clicks_enabled_server_side\":false,\"$feature_flag_errors\":[],\"$active_feature_flags\":[\"support-ticket\",\"proposal-bulk-review\",\"nonprofit-foundation-pair\",\"grantee-form-editability-v2\",\"sender-email-wizard\",\"new-proposal-layout\",\"reporting-map\",\"table-input\",\"survey-targeting-3e2f9b02cf-custom\",\"grantee-ai-assistant\",\"custom-dashboard\",\"notification-settings-v2\",\"MFA\"],\"$enabled_feature_flags\":{\"import-payments\":false,\"support-ticket\":true,\"proposal-bulk-review\":true,\"generate-ai-summary\":false,\"nonprofit-foundation-pair\":true,\"conflict-of-interest\":false,\"grantee-form-editability-v2\":true,\"sender-email-wizard\":true,\"solution-features\":false,\"eligibility-quiz\":false,\"new-proposal-layout\":true,\"materialised-view-data-report\":false,\"reporting-map\":true,\"temelio-chatbot\":false,\"entity-proposal-tags-v2\":false,\"file-access-validation-v2\":false,\"localtestflag\":false,\"table-input\":true,\"survey-targeting-3e2f9b02cf-custom\":true,\"advanced-pipeline-workflow-builder\":false,\"grantee-ai-assistant\":true,\"delete-pipeline-stage\":false,\"custom-dashboard\":true,\"notification-settings-v2\":true,\"form-field-locking\":false,\"s3-upload-callback\":false,\"MFA\":true,\"ckeditor-ai-assistant\":false},\"$feature_flag_payloads\":{},\"$feature_flag_details\":{\"import-payments\":{\"key\":\"import-payments\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":45155,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"support-ticket\":{\"key\":\"support-ticket\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":1,\"description\":\"Matched condition set 2\"},\"metadata\":{\"id\":230456,\"version\":4,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"proposal-bulk-review\":{\"key\":\"proposal-bulk-review\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":38938,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"generate-ai-summary\":{\"key\":\"generate-ai-summary\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":68937,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"nonprofit-foundation-pair\":{\"key\":\"nonprofit-foundation-pair\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":805746,\"version\":2,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"conflict-of-interest\":{\"key\":\"conflict-of-interest\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":1,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":65410,\"version\":3,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"grantee-form-editability-v2\":{\"key\":\"grantee-form-editability-v2\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":764937,\"version\":21,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"sender-email-wizard\":{\"key\":\"sender-email-wizard\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":827448,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"solution-features\":{\"key\":\"solution-features\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":349044,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"eligibility-quiz\":{\"key\":\"eligibility-quiz\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":18719,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"new-proposal-layout\":{\"key\":\"new-proposal-layout\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":20,\"description\":\"Matched condition set 21\"},\"metadata\":{\"id\":38063,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"materialised-view-data-report\":{\"key\":\"materialised-view-data-report\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":10,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":129759,\"version\":188,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"reporting-map\":{\"key\":\"reporting-map\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":39250,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"temelio-chatbot\":{\"key\":\"temelio-chatbot\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":100553,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"entity-proposal-tags-v2\":{\"key\":\"entity-proposal-tags-v2\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":819599,\"version\":3,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"file-access-validation-v2\":{\"key\":\"file-access-validation-v2\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":801237,\"version\":6,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"localtestflag\":{\"key\":\"localtestflag\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":6218,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"table-input\":{\"key\":\"table-input\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":21722,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"survey-targeting-3e2f9b02cf-custom\":{\"key\":\"survey-targeting-3e2f9b02cf-custom\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":829497,\"version\":11,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"advanced-pipeline-workflow-builder\":{\"key\":\"advanced-pipeline-workflow-builder\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":95976,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"grantee-ai-assistant\":{\"key\":\"grantee-ai-assistant\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":19258,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"delete-pipeline-stage\":{\"key\":\"delete-pipeline-stage\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":2,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":125718,\"version\":25,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"custom-dashboard\":{\"key\":\"custom-dashboard\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":12,\"description\":\"Matched condition set 13\"},\"metadata\":{\"id\":55231,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"notification-settings-v2\":{\"key\":\"notification-settings-v2\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":0,\"description\":\"Matched condition set 1\"},\"metadata\":{\"id\":49610,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"form-field-locking\":{\"key\":\"form-field-locking\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"out_of_rollout_bound\",\"condition_index\":0,\"description\":\"Out of rollout bound\"},\"metadata\":{\"id\":749552,\"version\":14,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"s3-upload-callback\":{\"key\":\"s3-upload-callback\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":804399,\"version\":9,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"MFA\":{\"key\":\"MFA\",\"enabled\":true,\"variant\":null,\"reason\":{\"code\":\"condition_match\",\"condition_index\":1,\"description\":\"Matched condition set 2\"},\"metadata\":{\"id\":26190,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}},\"ckeditor-ai-assistant\":{\"key\":\"ckeditor-ai-assistant\",\"enabled\":false,\"variant\":null,\"reason\":{\"code\":\"no_condition_match\",\"condition_index\":0,\"description\":\"No matching condition set\"},\"metadata\":{\"id\":169247,\"version\":1,\"description\":null,\"payload\":null,\"has_experiment\":false}}},\"$feature_flag_request_id\":\"10cd0f4f-bb7c-4c1f-b0cd-d02755c677c3\",\"$feature_flag_evaluated_at\":1788200460002,\"$epp\":true,\"$user_id\":\"gmbc92@gmail.com\",\"$stored_person_properties\":{\"name\":\"Guilherme Mendes\",\"email\":\"gmbc92@gmail.com\",\"userId\":\"ba538579-b457-4bac-beef-c92042fca705\",\"userType\":\"foundation\",\"temelioRole\":\"USER\",\"isTemelioAdmin\":false,\"isTemelioSuperuser\":false,\"isActive\":true,\"isNominator\":false,\"isReviewer\":false,\"isReferee\":false,\"foundationIds\":[\"5662152a-e6b3-4222-ba3d-9867a0f6926e\"],\"nonprofitIds\":[\"74cbf12f-3235-46fa-b8b9-22fb39e6437e\"],\"foundationCount\":1,\"nonprofitCount\":1,\"foundationNames\":[\"Test foundation for Guilherme\"],\"nonprofitNames\":[\"Test Community Fund\"],\"foundationRoles\":[\"ADMIN\"],\"nonprofitRoles\":[\"ADMIN\"]},\"$flag_call_reported\":{\"support-ticket\":[\"true\"],\"table-input\":[\"true\"],\"s3-upload-callback\":[\"false\"],\"MFA\":[\"true\"]},\"$stored_group_properties\":{\"foundation\":{\"name\":\"Test foundation for Guilherme\"}},\"$groups\":{\"foundation\":\"5662152a-e6b3-4222-ba3d-9867a0f6926e\"}}"
+        },
+        {
+          "name": "crisp-client/session/7b8ef069-f59e-4fdd-aadc-b0828eee4615",
+          "value": "session_fb5aa752-8445-41d3-9fe9-53c279b1c4fb"
+        },
+        {
+          "name": "crisp-client/session/7b8ef069-f59e-4fdd-aadc-b0828eee4615:e",
+          "value": "1788215930859"
+        },
+        {
+          "name": "__clerk_environment",
+          "value": "{\"value\":{\"object\":\"environment\",\"auth_config\":{\"claimed_at\":null,\"id\":\"\",\"object\":\"auth_config\",\"reverification\":false,\"single_session_mode\":true,\"session_minter\":false},\"display_config\":{\"object\":\"display_config\",\"after_create_organization_url\":\"https://app-dev.trytemelio.com\",\"after_join_waitlist_url\":\"https://app-dev.trytemelio.com\",\"after_leave_organization_url\":\"https://app-dev.trytemelio.com\",\"after_sign_in_url\":\"https://app-dev.trytemelio.com\",\"after_sign_out_all_url\":\"https://app-dev.trytemelio.com/signin\",\"after_sign_out_one_url\":\"https://liberal-swift-54.accounts.dev/sign-in/choose\",\"after_sign_up_url\":\"https://app-dev.trytemelio.com\",\"after_switch_session_url\":\"https://app-dev.trytemelio.com\",\"application_name\":\"Temelio\",\"branded\":true,\"captcha_heartbeat\":false,\"captcha_oauth_bypass\":[],\"captcha_provider\":\"turnstile\",\"captcha_public_key_invisible\":null,\"captcha_public_key\":null,\"captcha_widget_type\":null,\"clerk_js_version\":\"6\",\"create_organization_url\":\"https://liberal-swift-54.accounts.dev/create-organization\",\"favicon_image_url\":\"https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzMyN2VxVEM4UGk4WXkwNEluazdaeFZZU2haZyJ9\",\"google_one_tap_client_id\":\"968445988352-cd3vubpu0b10k5n2qdcpfpbs8ere8551.apps.googleusercontent.com\",\"home_url\":\"https://app-dev.trytemelio.com\",\"id\":\"display_config_2b57XGKckPe0A6od2VfSsRDDjMf\",\"instance_environment_type\":\"development\",\"logo_image_url\":\"https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzMyN2VwVUM4QTNzVThLamFEWkNhbVpBT3o0NiJ9\",\"organization_profile_url\":\"https://liberal-swift-54.accounts.dev/organization\",\"preferred_sign_in_strategy\":\"password\",\"privacy_policy_url\":\"\",\"show_devmode_warning\":false,\"sign_in_url\":\"https://app-dev.trytemelio.com/signin\",\"sign_up_url\":\"https://app-dev.trytemelio.com/signup\",\"support_email\":\"\",\"terms_url\":\"\",\"theme\":{\"buttons\":{\"font_color\":\"#ffffff\",\"font_family\":\"\\\"Source Sans Pro\\\", sans-serif\",\"font_weight\":\"600\"},\"general\":{\"color\":\"#6c47ff\",\"padding\":\"1em\",\"box_shadow\":\"0 2px 8px rgba(0, 0, 0, 0.2)\",\"font_color\":\"#151515\",\"font_family\":\"\\\"Source Sans Pro\\\", sans-serif\",\"border_radius\":\"0.5em\",\"background_color\":\"#ffffff\",\"label_font_weight\":\"600\"},\"accounts\":{\"background_color\":\"#ffffff\"}},\"user_profile_url\":\"https://liberal-swift-54.accounts.dev/user\",\"waitlist_url\":\"https://liberal-swift-54.accounts.dev/waitlist\"},\"id\":\"\",\"maintenance_mode\":false,\"client_debug_mode\":false,\"partitioned_cookies\":false,\"organization_settings\":{\"actions\":{\"admin_delete\":true},\"domains\":{\"enabled\":false,\"enrollment_modes\":[],\"default_role\":\"org:member\"},\"enabled\":true,\"max_allowed_memberships\":0},\"user_settings\":{\"actions\":{\"delete_self\":true,\"create_organization\":true,\"create_organizations_limit\":null},\"attack_protection\":{\"enumeration_protection\":{\"enabled\":false}},\"attributes\":{\"email_address\":{\"enabled\":true,\"required\":true,\"used_for_first_factor\":true,\"first_factors\":[\"email_code\"],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[\"email_code\"],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"email_address\"},\"phone_number\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":true,\"second_factors\":[\"phone_code\"],\"verifications\":[\"phone_code\"],\"verify_at_sign_up\":true,\"immutable\":false,\"name\":\"phone_number\"},\"username\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"username\"},\"web3_wallet\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"web3_wallet\"},\"first_name\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"first_name\"},\"last_name\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"last_name\"},\"password\":{\"enabled\":true,\"required\":true,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"password\"},\"authenticator_app\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":true,\"second_factors\":[\"totp\"],\"verifications\":[\"totp\"],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"authenticator_app\"},\"ticket\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"ticket\"},\"backup_code\":{\"enabled\":true,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":true,\"second_factors\":[\"backup_code\"],\"verifications\":[],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"backup_code\"},\"passkey\":{\"enabled\":false,\"required\":false,\"used_for_first_factor\":false,\"first_factors\":[],\"used_for_second_factor\":false,\"second_factors\":[],\"verifications\":[],\"verify_at_sign_up\":false,\"immutable\":false,\"name\":\"passkey\"}},\"passkey_settings\":{\"allow_autofill\":true,\"show_sign_in_button\":true,\"satisfies_second_factor\":false},\"password_settings\":{\"disable_hibp\":true,\"disable_password_reverification\":false,\"min_length\":8,\"max_length\":72,\"require_special_char\":true,\"require_numbers\":true,\"require_uppercase\":true,\"require_lowercase\":true,\"show_zxcvbn\":false,\"min_zxcvbn_strength\":0,\"enforce_hibp_on_sign_in\":false,\"allowed_special_characters\":\"!\\\"#$%&'()*+,-./:;<=>?@[]^_`{|}~\"},\"sign_in\":{\"second_factor\":{\"required\":false}},\"sign_up\":{\"captcha_enabled\":false,\"captcha_widget_type\":\"\",\"custom_action_required\":false,\"progressive\":true,\"mode\":\"public\",\"legal_consent_enabled\":false,\"mfa\":{\"required\":false}},\"social\":{\"oauth_google\":{\"enabled\":true,\"required\":false,\"authenticatable\":true,\"block_email_subaddresses\":false,\"strategy\":\"oauth_google\",\"not_selectable\":false,\"deprecated\":false,\"name\":\"Google\",\"logo_url\":\"https://img.clerk.com/static/google.png\"},\"oauth_microsoft\":{\"enabled\":true,\"required\":false,\"authenticatable\":true,\"block_email_subaddresses\":false,\"strategy\":\"oauth_microsoft\",\"not_selectable\":false,\"deprecated\":false,\"name\":\"Microsoft\",\"logo_url\":\"https://img.clerk.com/static/microsoft.png\"}}},\"commerce_settings\":{\"billing\":{\"stripe_publishable_key\":null,\"organization\":{\"enabled\":false,\"has_paid_plans\":false},\"user\":{\"enabled\":false,\"has_paid_plans\":false}}},\"api_keys_settings\":{\"user_api_keys_enabled\":false,\"orgs_api_keys_enabled\":false},\"protect_config\":{\"object\":\"protect_config\",\"id\":\"\"}},\"exp\":1788286561623}"
+        },
+        {
+          "name": "temelio:menu:Workflows",
+          "value": "true"
+        },
+        {
+          "name": "temelio:menu:Activity",
+          "value": "true"
+        },
+        {
+          "name": "temelio:menu:Data & Reporting",
+          "value": "true"
+        },
+        {
+          "name": "temelio:menu:Contacts",
+          "value": "true"
+        },
+        {
+          "name": "chakra-ui-color-mode",
+          "value": "light"
+        }
+      ]
+    },
+    {
+      "origin": "https://vercel.live",
+      "localStorage": [
+        {
+          "name": "vid-https://app-dev.trytemelio.com",
+          "value": "\"17882000359580.2199633016081335\""
+        },
+        {
+          "name": "vercel-toolbar-experiment-uuid-https://app-dev.trytemelio.com",
+          "value": "\"WTjha3o2awTZOGOOGQICj\""
+        }
+      ]
+    }
+  ]
+}
