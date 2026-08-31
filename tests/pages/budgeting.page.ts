@@ -17,6 +17,18 @@ export class BudgetingPage {
         this.successToast = page.getByText("Successfully updated");
     }
 
+    private async clearField(locator: Locator) {
+        await locator.click();
+        await locator.press("ControlOrMeta+A");
+        await locator.press("Backspace");
+
+        let currentValue = await locator.inputValue();
+        while (currentValue.length > 0) {
+            await locator.press("Backspace");
+            currentValue = await locator.inputValue();
+        }
+    }
+
     async openFoundation(foundationName: string) {
         await this.page.getByRole("link", { name: foundationName, exact: true }).click();
     }
@@ -24,6 +36,7 @@ export class BudgetingPage {
     async goToAdminSettings() {
         await this.page.getByRole("button", { name: "More", exact: true }).click();
         await this.page.getByRole("menuitem", { name: "User Settings" }).click();
+        await this.page.waitForURL((url) => url.pathname.includes("/settings"));
         await this.page.getByRole("link", { name: "Admin", exact: true }).click();
     }
 
@@ -35,18 +48,93 @@ export class BudgetingPage {
     }
 
     async fillTotalBudget(amount: string) {
+        await this.clearField(this.totalBudgetInput);
         await this.totalBudgetInput.fill(amount);
-        await this.totalBudgetInput.blur(); // precisa tirar o foco pra disparar o autosave
+        await this.totalBudgetInput.blur();
     }
 
     async typeIntoTotalBudget(text: string) {
-        // pressSequentially em vez de fill: simula teclado de verdade,
-        // testando se a máscara do campo bloqueia caracteres inválidos na hora da digitação
+        await this.clearField(this.totalBudgetInput);
         await this.totalBudgetInput.pressSequentially(text);
         await this.totalBudgetInput.blur();
     }
 
     async getTotalBudgetValue() {
         return this.totalBudgetInput.inputValue();
+    }
+
+    categoryNameInput(index: number): Locator {
+        return this.page.getByRole("textbox").nth(index + 1);
+    }
+
+    categoryValueInput(index: number): Locator {
+        return this.page.getByRole("spinbutton").nth(index);
+    }
+
+    removeCategoryButton(index: number): Locator {
+        return this.page.getByRole("button", { name: "Remove" }).nth(index);
+    }
+
+    async fillCategoryName(index: number, name: string) {
+        const input = this.categoryNameInput(index);
+        await this.clearField(input);
+        await input.fill(name);
+        await input.blur();
+    }
+
+    async getCategoryName(index: number) {
+        return this.categoryNameInput(index).inputValue();
+    }
+
+    async fillCategoryValue(index: number, value: string) {
+        const input = this.categoryValueInput(index);
+        await this.clearField(input);
+        await input.fill(value);
+        await input.blur();
+    }
+
+    async typeIntoCategoryValue(index: number, text: string) {
+        const input = this.categoryValueInput(index);
+        await this.clearField(input);
+        await input.pressSequentially(text);
+        await input.blur();
+    }
+
+    async getCategoryValue(index: number) {
+        return this.categoryValueInput(index).inputValue();
+    }
+
+    async removeCategory(index: number) {
+        await this.removeCategoryButton(index).click();
+    }
+
+    async getCategoryCount() {
+        return this.page.getByRole("spinbutton").count();
+    }
+
+    async addCategory() {
+        await this.page.getByRole("button", { name: "Add" }).nth(3).click();
+    }
+
+    async addSubCategory(parentIndex: number) {
+        await this.page.getByRole("button", { name: "Add sub" }).nth(parentIndex).click();
+    }
+
+    async resetCategoriesToStandard(standard: { name: string; value: string }[]) {
+        let count = await this.getCategoryCount();
+        while (count > 1) {
+            await this.removeCategory(0);
+            count = await this.getCategoryCount();
+        }
+
+        await this.fillCategoryName(0, standard[0].name);
+        await this.fillCategoryValue(0, standard[0].value);
+
+        for (let i = 1; i < standard.length; i++) {
+            await this.addCategory();
+            const index = (await this.getCategoryCount()) - 1;
+            await this.fillCategoryName(index, standard[i].name);
+            await this.fillCategoryValue(index, standard[i].value);
+        }
     }
 }
